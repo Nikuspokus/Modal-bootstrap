@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+
+
+    <div>
+  <b-button @click="showModal" ref="btnShow">Open Modal</b-button>
+
+  <b-modal id="modal-1">
+    <div class="d-block">Hello From My Modal!</div>
+    <b-button @click="hideModal">Close Me</b-button>
+    <b-button @click="toggleModal">Toggle Me</b-button>
+  </b-modal>
+</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
+  },
+  methods: {
+    showModal() {
+      this.$root.$emit('bv::show::modal', 'modal-1', '#btnShow')
+    },
+    hideModal() {
+      this.$root.$emit('bv::hide::modal', 'modal-1', '#btnShow')
+    },
+
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
