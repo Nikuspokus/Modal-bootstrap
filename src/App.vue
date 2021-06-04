@@ -8,6 +8,9 @@
           >Open Modal
         </b-button>
       </div>
+      <template>
+ 
+</template>
 
       <b-modal
         id="bv-modal-example"
@@ -22,11 +25,11 @@
             <h3 style="display: inline">YPO next Gen #5</h3>
             <b-button-close
               type="button"
-              class="border-radius: 20px"
+              class="border-radius: 20px bg-transparent"
               aria-label="close"
               style="border-color: transparent; border-radius:5px; float:right"
               @click="$bvModal.hide('bv-modal-example')"
-            >
+            >X
             </b-button-close>
           </div>
           <div class="row">
@@ -135,3 +138,4 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 </style>
+
