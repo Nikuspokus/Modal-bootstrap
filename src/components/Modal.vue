@@ -1,8 +1,7 @@
 <template>
   <div>
-    
-    <b-button @click="showModal" ref="btnShow">Open Modal</b-button>
-    <b-button @click="toggleModal" ref="btnToggle">Toggle Modal</b-button>
+
+    <b-button @click="showModal">Open Modal</b-button>
 
     <b-modal id="modal-1">
       <div class="d-block">Hello From My Modal!</div>
