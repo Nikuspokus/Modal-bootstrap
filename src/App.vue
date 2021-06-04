@@ -8,10 +8,7 @@
           >Open Modal
         </b-button>
       </div>
-      <template>
- 
-</template>
-
+     
       <b-modal
         id="bv-modal-example"
         hide-footer
@@ -19,18 +16,17 @@
         class="modal-xl m-2 border border-primary-50 rounded"
         size="lg"
       >
-        <template #modal-title> Using <code>$bvModal</code> Methods </template>
         <div>
           <div>
-            <h3 style="display: inline">YPO next Gen #5</h3>
-            <b-button-close
+            <h3 class="text-center">YPO next Gen #5</h3>
+            <!-- <b-button-close
               type="button"
-              class="border-radius: 20px bg-transparent"
+              class="border-radius: 20px"
               aria-label="close"
               style="border-color: transparent; border-radius:5px; float:right"
               @click="$bvModal.hide('bv-modal-example')"
-            >X
-            </b-button-close>
+            >
+            </b-button-close> -->
           </div>
           <div class="row">
             <div class="col-7 p-0">
@@ -138,4 +134,3 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 </style>
-
