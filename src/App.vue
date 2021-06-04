@@ -8,12 +8,12 @@
           >Open Modal
         </b-button>
       </div>
-     
+
       <b-modal
         id="bv-modal-example"
         hide-footer
         hide-header
-        class="modal-xl m-2 border border-primary-50 rounded"
+        class="modal-xl m-1 border border-primary-50 rounded"
         size="lg"
       >
         <div>
@@ -31,7 +31,7 @@
           <div class="row">
             <div class="col-7 p-0">
               <div class="row m-2 border border-primary-50 rounded bg-white">
-                <div class="row text-muted m-1">
+                <div class="row text-muted m-2">
                   <p>
                     Description de la réunion
                   </p>
@@ -92,8 +92,19 @@
             <div
               class="col-4 m-2 border border-primary-50 bg-white rounded text-muted m-1"
             >
-              Participants Voir pour faire un collapse pour la liste des
-              Participants
+              <div class="m-2">
+                Participants 
+              </div>
+              <div>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Nicolas Vasseur</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Justine Wannehein</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Robin Belon</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Thomas Fournet</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Julien Bisson</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Eloïse Fauquette</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Thomas Dujardin</b-button>
+                <b-button pill disabled variant="outline-primary" class="m-1" style="font-size: 80%;">Lea Escorza</b-button>
+              </div>
             </div>
           </div>
           <hr />
