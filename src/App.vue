@@ -16,12 +16,20 @@
         class="modal-xl m-2 border border-primary-50 rounded"
         size="lg"
       >
+        <template #modal-title> Using <code>$bvModal</code> Methods </template>
         <div>
           <div>
-            <h3>Hello From This Modal!</h3>
+            <h3 style="display: inline">YPO next Gen #5</h3>
+            <b-button-close
+              type="button"
+              class="border-radius: 20px"
+              aria-label="close"
+              style="border-color: transparent; border-radius:5px; float:right"
+              @click="$bvModal.hide('bv-modal-example')"
+            >
+            </b-button-close>
           </div>
-
-          <div class="row p-auto">
+          <div class="row">
             <div class="col-7 p-0">
               <div class="row m-2 border border-primary-50 rounded bg-white">
                 <div class="row text-muted m-1">
@@ -29,21 +37,22 @@
                     Description de la réunion
                   </p>
                   <h6 class="m-0 p-0">Ceci est un titre</h6>
-                  <br>
+                  <br />
                   <p class="m-0 p-0">
                     Une petite réunion Agile pour partir en vacances d'été
                     l'esprit tranquille
                   </p>
                 </div>
-                <div class="row text-muted m-1"> <div>
-                  Sujets de la réunion:
+                <div class="row text-muted m-1">
+                  <div>
+                    Sujets de la réunion:
                   </div>
-                  <ul class="pl-3">
+                  <ul>
                     <li class="ml-3">dsfsdf</li>
-                    <li class="ml-3">dsfsdf</li>
+                    <li class="pl-3">dsfsdf</li>
                     <li class="ml-3">dsfsdf</li>
                   </ul>
-                  </div> 
+                </div>
               </div>
               <div
                 class="row m-2 border border-primary-50 rounded  text-muted m-1"
