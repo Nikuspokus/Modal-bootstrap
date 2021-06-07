@@ -52,11 +52,14 @@
                     <div>
                       Sujets de la réunion:
                     </div>
+                    <div>
+
                     <ul>
                       <li class="ml-3">dsfsdf</li>
                       <li class="pl-3">dsfsdf</li>
                       <li class="ml-3">dsfsdf</li>
                     </ul>
+                    </div>
                   </div>
                 </div>
                 <div
