@@ -38,51 +38,32 @@
               <div class="col-6 p-0" id="gauche">
                 <div class="row m-2 border border-primary-50 rounded bg-white">
                   <div class="row text-muted m-2">
-                    <p>
+                    <h5>
                       Description de la réunion
-                    </p>
-                    <h6 class="m-0 p-0">Ceci est un titre</h6>
-                    <br />
+                    </h5>
+                    <br>
+                    <br>
                     <p class="m-0 p-0">
                       Une petite réunion Agile pour partir en vacances d'été
                       l'esprit tranquille
                     </p>
+                    <br>
                   </div>
                   <div class="row text-muted m-1">
-                    <div>
+                    <h6>
                       Sujets de la réunion:
-                    </div>
+                    </h6>
+                    <br>
                     <div>
-
-                    <ul>
-                      <li class="ml-3">dsfsdf</li>
-                      <li class="pl-3">dsfsdf</li>
-                      <li class="ml-3">dsfsdf</li>
-                    </ul>
+                      <ul>
+                        <li class="ml-3">dsfsdf</li>
+                        <li class="pl-3">dsfsdf</li>
+                        <li class="ml-3">dsfsdf</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <div
-                  class="row m-2 border border-primary-50 rounded  text-muted m-1"
-                >
-                  <b-button
-                    class="size"
-                    style="background-color:rgb(0, 119, 255); border:none; "
-                  >
-                    <div class="row  ">
-                      <a
-                        href="https://www.google.fr"
-                        target="_blank"
-                        class="mx-auto m-2 d-block"
-                        style="color: white; text-decoration:none"
-                      >
-                        Rejoindre la réunion
-                      </a>
-                    </div>
-                  </b-button>
-                  
-                  
-                </div>
+
                 <div class="row m-2 text-muted">
                   <div class="row text-muted ">
                     <div>
@@ -99,7 +80,7 @@
                 </div>
               </div>
               <div
-                class="col-4 m-2 border border-primary-50 bg-white rounded text-muted m-1"
+                class="col-4 m-2 border border-primary-50 bg-white rounded text-muted "
                 id="droite"
               >
                 <div class="m-2">
@@ -173,13 +154,41 @@
                 </div>
               </div>
             </div>
-            <hr />
-            <b-button
-              class="mt-3"
-              style="float: right;"
-              @click="$bvModal.hide('bv-modal-example-1')"
-              >Retour</b-button
-            >
+            <div class="row">
+              <div id="global">
+                <div id="gauche"
+                  class="col-4 m-2 border border-primary-50 bg-white rounded text-muted">
+                  <b-button
+                    class="size "
+                    style="background-color:rgb(0, 119, 255); border:none; float: left"
+                  >
+                    <div class="row  ">
+                      <a
+                        href="https://www.google.fr"
+                        target="_blank"
+                        class="mx-auto d-block"
+                        style="color: white; text-decoration:none"
+                      >
+                      <span class=glyphicon glyphicon-facetime-video>Rejoindre la réunion</span>
+                        
+                      </a>
+                    </div>
+                  </b-button>
+                </div> 
+               
+                <div
+                  id="droite"
+                  class="col-4 my-2 border border-primary-50 bg-white rounded text-muted"
+                >
+                  <b-button
+                    class="size"
+                    style="background-color:rgb(143, 143, 143); border:none; float: right;"
+                    @click="$bvModal.hide('bv-modal-example-1')"
+                    >Retour
+                  </b-button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </b-modal>
@@ -399,6 +408,7 @@ hr {
 .size {
   width: 100%;
   background-color: rgb(0, 119, 255);
+  background-color: rgb(143, 143, 143);
 }
 a {
   color: aqua;
