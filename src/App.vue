@@ -1,11 +1,14 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Test Modal" />
+    <!-- <HelloWorld class="ml-0 center" msg="Test Modale" /> -->
 
     <div>
       <div class="mx-auto center" style="width: 150px;">
-        <b-button id="show-btn" @click="$bvModal.show('bv-modal-example-1')"
-          >Open Modal 1
+        <b-button
+          class="mt-5"
+          id="show-btn"
+          @click="$bvModal.show('bv-modal-example-1')"
+          >Open Modale
         </b-button>
       </div>
       <!-- <div class="mx-auto center" style="width: 150px;">
@@ -41,19 +44,19 @@
                     <h5>
                       Description de la réunion
                     </h5>
-                    <br>
-                    <br>
+                    <br />
+                    <br />
                     <p class="m-0 p-0">
                       Une petite réunion Agile pour partir en vacances d'été
                       l'esprit tranquille
                     </p>
-                    <br>
+                    <br />
                   </div>
                   <div class="row text-muted m-1">
                     <h6>
                       Sujets de la réunion:
                     </h6>
-                    <br>
+                    <br />
                     <div>
                       <ul>
                         <li class="ml-3">dsfsdf</li>
@@ -81,101 +84,138 @@
               </div>
               <div
                 class="col-4 m-2 border border-primary-50 bg-white rounded text-muted "
-                id="droite"
+                id="droite "
               >
                 <div class="m-2">
-                  Participants
+                  Participants (12)
                 </div>
-                <div>
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Nicolas Vasseur</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Justine Wannehein</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Robin Belon</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Thomas Fournet</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Julien Bisson</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Eloïse Fauquette</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Thomas Dujardin</b-button
-                  >
-                  <b-button
-                    pill
-                    disabled
-                    variant="outline-primary"
-                    class="m-1"
-                    style="font-size: 80%;"
-                    >Lea Escorza</b-button
-                  >
+                  <div class="scrollbar" id="style-1">
+                    <div class="force-overflow m-2">
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Nicolas Vasseur</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Justine Wannehein</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Robin Belon</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Thomas Fournet</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Nicolas Vasseur</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Justine Wannehein</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Robin Belon</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Thomas Fournet</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Julien Bisson</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Eloïse Fauquette</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Thomas Dujardin</b-button
+                      >
+                      <b-button
+                        pill
+                        disabled
+                        variant="outline-primary"
+                        class="m-1"
+                        style="font-size: 80%;"
+                        >Lea Escorza</b-button
+                      >
+                    </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div id="global">
-                <div id="gauche"
-                  class="col-4 m-2 border border-primary-50 bg-white rounded text-muted">
+                <div
+                  id="gauche"
+                  class="col-4 m-2 border border-primary-50 bg-white rounded text-muted"
+                >
                   <b-button
                     class="size "
                     style="background-color:rgb(0, 119, 255); border:none; float: left"
                   >
                     <div class="row  ">
                       <a
-                        href="https://www.google.fr"
+                        href="https://sii-group.com/fr-FR/sii-lille"
                         target="_blank"
                         class="mx-auto d-block"
                         style="color: white; text-decoration:none"
                       >
-                      <span class=glyphicon glyphicon-facetime-video>Rejoindre la réunion</span>
-                        
+                        <span class="glyphicon" glyphicon-facetime-video
+                          >Rejoindre la réunion</span
+                        >
                       </a>
                     </div>
                   </b-button>
-                </div> 
-               
+                </div>
+
                 <div
                   id="droite"
                   class="col-4 my-2 border border-primary-50 bg-white rounded text-muted"
@@ -192,174 +232,14 @@
           </div>
         </div>
       </b-modal>
-      <!-- //////////////////////////////////////////////////// -->
-      <!-- <b-modal
-        id="bv-modal-example-2"
-        hide-footer
-        hide-header
-        class="modal-xl m-1 border border-primary-50 rounded"
-        size="lg"
-      >
-        <div id="global">
-          <h3 class="text-center">YPO</h3>
-          <div
-            id="gauche"
-            class="border border-primary-50 bg-white p-2"
-            style="border-radius: 10px;"
-          >
-            <div class="col ">
-              <div
-                class="border border-primary-50 row text-muted m-2 mb-10"
-                style="height: 300px; border-radius: 10px;"
-              >
-                <p>
-                  Description de la réunion
-                </p>
-                <h6>Ceci est un titre</h6>
-                <br />
-                <p>
-                  Une petite réunion Agile pour partir en vacances d'été
-                  l'esprit tranquille
-                </p>
-                <div class="row text-muted m-1">
-                  <div>
-                    Sujets de la réunion:
-                  </div>
-                  <ul>
-                    <li class="ml-3">dsfsdf</li>
-                    <li class="pl-3">dsfsdf</li>
-                    <li class="ml-3">dsfsdf</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="container">
-                <b-button
-                  class="size"
-                  style="background-color:rgb(0, 119, 255); border:none; "
-                >
-                  <div class="row  ">
-                    <a
-                      href="https://www.google.fr"
-                      target="_blank"
-                      class="mx-auto m-2 d-block"
-                      style="color: white; text-decoration:none"
-                    >
-                      Rejoindre la réunion
-                    </a>
-                  </div>
-                </b-button>
-                <div>
-                  <b-badge style="background-color:pink" class="mx-1"
-                    >Speak'up</b-badge
-                  >
-                  <b-badge style="background-color:green" class="mx-1"
-                    >PHP</b-badge
-                  >
-                  <b-badge class="test-3 mx-1">SII lille</b-badge>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="droite"
-            class="border border-primary-50 bg-white p-2"
-            style="border-radius: 10px;"
-          >
-            <div>
-              liste des participants
-            </div>
-            <div>
-              <div>
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Nicolas Vasseur</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Justine Wannehein</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Robin Belon</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Thomas Fournet</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Julien Bisson</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Eloïse Fauquette</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Thomas Dujardin</b-button
-                >
-                <b-button
-                  pill
-                  disabled
-                  variant="outline-primary"
-                  class="m-1"
-                  style="font-size: 80%;"
-                  >Lea Escorza</b-button
-                >
-              </div>
-            </div>
-          </div>
-          <hr />
-          <b-button
-            class="mt-3"
-            style="float: right;"
-            @click="$bvModal.hide('bv-modal-example-2')"
-            >Retour
-          </b-button>
-        </div>
-      </b-modal> -->
     </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+
   methods: {
     showModal() {
       this.$root.$emit("bv::show::modal", "modal-1", "#btnShow");
@@ -378,12 +258,6 @@ hr {
 }
 
 .test-1 {
-  background-color: rgb(0, 119, 255);
-}
-.test-2 {
-  background-color: rgb(0, 119, 255);
-}
-.test-3 {
   background-color: rgb(0, 119, 255);
 }
 
@@ -416,5 +290,36 @@ a {
 .container {
   justify-content: flex-start;
   align-self: flex-end;
+}
+
+/* .scroller {
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+} */
+
+.scrollbar {
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f5f5f5;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(0, 119, 255);
 }
 </style>
